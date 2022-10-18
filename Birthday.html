@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="Music.css">
     <link rel="stylesheet" href="Msg.css">
-
+    <link rel="stylesheet" href="Dark.css">  
     <style>
         .story img {
             max-width: 50vh;
@@ -47,9 +47,14 @@
     </style>
 </head>
 <body>
+    <!-- Dark -->
+        <input type="checkbox" class="theme" id="chk" />
+        <label class="themel" for="chk"></label>
+
+    <!-- Main -->
     <input type="checkbox" id="close" name="close">
 
-    <label for="close">X</label>
+    <label for="close" class="msglabel">X</label>
 
     <div class="msg">
         <p> <img src="Picture/meme/Birthday.gif"> <br>
@@ -63,7 +68,6 @@
             Ar please ektu monojog diye dhire dhire poiren. ami aita tarahura kore porar jonno banainai.
         </p>
     </div>
-
 
     <audio id="track" src="Music/Katawari doki.mp3" preload="auto" loop></audio>
     <div id="play-pause" class="play"></div>
@@ -93,6 +97,15 @@
 
             <img src="Picture/meme/Brithday 2.png"> <br>
 
+            Bujhtei parsen ki bolte chaisi 😄. But afnake jevale dilm, aivabe nishchoi mone thakbe. Karon aita kisuta special silo. Taina?
+            <br><br>
+            <h3>Fun fact:</h3>
+            Ami afner thike 2 years er choto 🥲. <br>
+            Hmmm 🥲 thiki dekhsen. <br>
+            Amr admission er tym e notun kore birth certificate korsilo.
+            jekhane amr birth year 2007 dise. Seriously!!! 3 years komay felse abbu amre 😞. Ar ki bollbo.
+            bt real e amr 2004. So afni chaile happy hoite paren je, ami officially afner te 2 years er choto.
+            <br><br>
             ------------------------------------ <br>
             Assa, shesh. THE END (kinda).... <br>
             ------------------------------------ <br>
@@ -102,9 +115,10 @@
             bday janaite chaisilm to bole disi easy te. bt porer step hard hoite jaitese, my detective! get ready for new mystery! #
             </p>
 
-            <a href="http://circleftp.net/">Next</a>
+            <a href="" class="next">Next</a>
     </div>
 
     <script src="Music.js"></script>
+    <script src="Dark.js"></script>
 </body>
 </html>

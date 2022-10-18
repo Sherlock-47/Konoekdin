@@ -1,27 +1,23 @@
-input {
+#close {
     position: absolute;
     top: 10%;
     right: 10%;
 
-    opacity: 0;
+    display: none;
 
     transform: scale(1.5);
-
-    cursor: pointer;
-    
-    z-index: 2;
 }
 
-input:checked, input:checked ~ .msg, input:checked + label {
+#close:checked ~ .msg, #close:checked + .msglabel {
     display: none;
 }
 
-input:checked, input:checked ~ .story {
+#close:checked ~ .story {
     display: block;
 }
 
 
-label {
+.msglabel {
     position: absolute;
     top: 10%;
     right: 10%;
@@ -51,7 +47,7 @@ label {
     max-width: 24vh;
 }
 
-span {
+.msg span {
     font-size: xx-large;
 }
 

@@ -2,18 +2,3 @@ body {
     height: 100%;
     font-family: 'Comic Neue', cursive;
 }
-
-body::after { 
-    position:absolute; 
-    width:0; 
-    height:0; 
-    overflow:hidden; 
-    z-index:-1; 
-    content:
-    url('Picture/meme/Birthday.gif')
-    url('Picture/meme/Brithday2.png')
-    url('Picture/player/playw.png') 
-    url('Picture/player/pausew.png') 
-    url('Picture/Dark mode/moon.png')
-    url('Picture/Dark mode/sun.png');
-}

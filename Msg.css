@@ -19,13 +19,20 @@
 
 .msglabel {
     position: absolute;
-    top: 10%;
-    right: 10%;
+    top: 3%;
+    right: 5%;
 
-    font-size: x-large;
     z-index: 2;
 
     cursor: pointer;
+
+    padding: 1.4rem;
+    border-radius: 10rem;
+
+    background: url('../Picture/msg/close.png') no-repeat;
+    background-size: .8rem;
+    background-position: center;
+    background-color: #e2e2e2;
 }
 
 .msg {
@@ -44,7 +51,7 @@
 }
 
 .msg img {
-    max-width: 24vh;
+    max-width: 8rem;
 }
 
 .msg span {

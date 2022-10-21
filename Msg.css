@@ -19,8 +19,8 @@
 
 .msglabel {
     position: absolute;
-    top: 3%;
-    right: 5%;
+    top: 1rem;
+    right: 1.2rem;
 
     z-index: 2;
 
@@ -29,7 +29,7 @@
     padding: 1.4rem;
     border-radius: 10rem;
 
-    background: url('../Picture/msg/close.png') no-repeat;
+    background: url('Picture/msg/close.png') no-repeat;
     background-size: .8rem;
     background-position: center;
     background-color: #e2e2e2;

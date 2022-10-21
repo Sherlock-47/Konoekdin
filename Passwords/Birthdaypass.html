@@ -10,30 +10,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
+    
+    <link rel="stylesheet" href="../Msg.css">
     <link rel="stylesheet" href="password.css">
+    <link rel="stylesheet" href="../Dark.css">
+    <link rel="stylesheet" href="../basic.css">
+
+    <style>
+        body::after { 
+            position:absolute; 
+            width:0; 
+            height:0; 
+            overflow:hidden; 
+            z-index:-1; 
+            content:
+            url('Picture/msg/close.png')
+            url('Picture/player/playw.png') 
+            url('Picture/player/pausew.png') 
+            url('Picture/Dark mode/moon.png')
+            url('Picture/Dark mode/sun.png');
+        }
+    </style>
 
 </head>
 <body>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    <form>
-        <h3>Password den <br> sis</h3>
+    <!-- Dark -->
+    <input type="checkbox" class="theme" id="chk" />
+    <label class="themel" for="chk"></label>
 
-        <label for="password">Password</label>
-        <input name="pass" type="password" placeholder="Password" id="password">
-        <input class="button" value="Enter" onclick="pasuser(this.form)" type="button" id="enter">
-    </form>
+    <!-- Main -->
+    <input type="checkbox" id="close" name="close">
+
+    <label for="close" class="msglabel"></label>
+
+    <div class="msg">
+        <p> <span>Good For You</span> <br><br><br>
+            
+            Kemne janben password? Afni to nij issay game quit kore felsen. <br>
+            Taile akhn abr ekhane ashsen ken? Dur hon ente! <br>
+            Hush!
+        </p>
+    </div>
+
+
+          <form class="login-form">
+            <h2>Password den <br> sis 🧐</h2>
+            <input name="pass" type="password" placeholder="password"/>
+            <input class="button" value="Enter" onclick="pasuser(this.form)" type="button" id="enter">
+            <label for="close" class="message">Password janenna?</label>
+          </form>
 
     <script language="javascript">
         function pasuser(form) {
-            if (form.pass.value=="123") {
+            if (form.pass.value=="515 907 my 8127h d473") {
                 location="https://sherlock-47.github.io/Konoekdin/Birthday.html";
+
             } else { 
-                alert("Wrong Password") 
+                alert("Wrong Password");
+
             }
         } 
     </script>
+
+    <script src="../Dark.js"></script>
 </body>
 </html>

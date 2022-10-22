@@ -1,0 +1,25 @@
+#play-pause {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    border-radius: 10rem;
+    height:40px;
+    width: 40px;
+    padding: .3rem;
+    background-image: url('../Picture/player/playw.png');
+    background-repeat: no-repeat !important;
+    background-position: 55%;
+    background-size: 1rem;
+    background-color: #424242;
+
+	box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.514);
+    z-index: 1;
+}
+.play {
+    background-image: url('../Picture/player/playw.png');
+}
+.pause {
+    background-image: url('../Picture/player/pausew.png') !important;
+    background-position: center !important;
+}

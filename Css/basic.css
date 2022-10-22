@@ -40,4 +40,5 @@
 *::before {
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
 }

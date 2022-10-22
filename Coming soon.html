@@ -7,11 +7,23 @@
     <title>Coming Soon</title>
 
     <link rel="stylesheet" href="Css/basic.css">
+    <link rel="stylesheet" href="Css/Dark.css">
 
     <style>
         body {
             height: 100%;
             font-family: 'Comic Neue', cursive;
+        }
+
+        body::after { 
+            position:absolute; 
+            width:0; 
+            height:0; 
+            overflow:hidden; 
+            z-index:-1; 
+            content:
+            url('Picture/Dark mode/moon.png')
+            url('Picture/Dark mode/sun.png');
         }
 
         div {
@@ -23,10 +35,17 @@
         }
     </style>
 </head>
-<body>
+<body> 
+    <!-- Dark -->
+    <input type="checkbox" class="theme" id="chk" />
+    <label class="themel" for="chk"></label>
+
+    <!-- Main -->
     <div>
         <h1>Coming Soon</h1>
         <p>Rifat is working on it</p>
     </div>
+
+    <script src="Javascript/Dark.js"></script>
 </body>
 </html>
